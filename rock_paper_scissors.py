@@ -1,9 +1,12 @@
+import random
+
+
 def get_user_choice():
     """
     Function to get and validate user choice for rock, paper, or scissors.
     """
     while True:
-        user_choice = input("Enter rock, paper, or scissors: ").lower()
+        user_choice = input("Enter rock, paper, or scissors: ").lower() or input("Enter rock, paper, or scissors: ").upper()
         if user_choice in ['rock', 'paper', 'scissors']:
             return user_choice
         else:
